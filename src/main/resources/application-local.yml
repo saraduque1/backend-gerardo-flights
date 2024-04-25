@@ -1,0 +1,21 @@
+spring: # Spring configuration
+    datasource: # Database connection
+        url: jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres
+        username: postgres.htvtxwvfcbscbtegopgl
+        password: F4bric4Escuel4*
+        hikari:
+            schema: sitas
+
+    jpa: # JPA
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+        database: postgresql
+        show-sql: false
+    main:
+        allow-bean-definition-overriding: true
+
+server:
+    port: 8080
